@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+
+.card{
+    box-shadow: 15px 20px 35px 0px rgba(3, 15, 236, 0.103);
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    width: 40vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.results{
+    color: white;
+    padding: 25px;
+    border-radius: 20px;
+    background-color: rgba(28, 28, 244, 0.744);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 35px;
+}
+
+.score{
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.288), rgba(0, 0, 0, 0));
+    height: 40%;
+    border-radius: 50%;
+    aspect-ratio: 1/1;
+    display: grid;
+    place-content: center;
+}
+
+.score h1{
+    font-size: 2.5rem;
+}
+
+.review{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.review p{
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+/* Summary Section */
+.summary{
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.elements{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.element{
+    border-radius: 5px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5px;
+}
+
+.title{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.marks span{
+    color: black;
+    font-weight: bold;
+    font-size: 0.8rem;
+}
+
+#reaction{
+    color: hsl(0, 100%, 67%);
+    background-color: hsla(0, 100%, 67%, 0.116);
+}
+
+#memory{
+    color: hsl(39, 100%, 56%);
+    background-color: hsla(39, 100%, 56%, 0.116);
+}
+
+#verbal{
+    color: hsl(166, 100%, 37%);
+    background-color: hsla(166, 100%, 37%, 0.116);
+}
+
+#visual{
+    color: hsl(234, 85%, 45%);
+    background-color: hsla(234, 85%, 45%, 0.116);
+}
+
+.btn{
+    color: white;
+    background-color: hsl(224, 30%, 27%);
+    border: none;
+    border-radius: 20px;
+    width: 100%;
+    padding: 10px;
+}
+
+.btn:active{
+    background-color: rgba(28, 28, 244, 0.744);
+}
+
+
+@media (max-width: 376px) {
+    .card{
+        top: 0;
+        left: 0;
+        transform: translate(0, 0);
+        width: 100vw;
+        grid-template-columns: auto;
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+    .results{
+        border-radius: 0 0 20px 20px;
+    }
+}
