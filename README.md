@@ -16,8 +16,8 @@
 
 ### Links
 
-- [Solution URL](https://your-solution-url.com)
-- [Live Site URL](https://your-live-site-url.com)
+- [Solution URL](https://www.frontendmentor.io/solutions/dynamic-data-manipulation-responsive-grid-layouts-xzRtnP0eDx)
+- [Live Site URL](https://mann-19.github.io/Result-Summary-Component/)
 
 ## My Process
 
